@@ -1,0 +1,116 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String
+  name      String
+  role      String   @default("admin")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("users")
+}
+
+model Section {
+  id         String         @id @default(cuid())
+  slug       String         @unique
+  title      String
+  subtitle   String?
+  body       String?
+  ctaText    String?        @map("cta_text")
+  ctaLink    String?        @map("cta_link")
+  sortOrder  Int            @default(0) @map("sort_order")
+  visible    Boolean        @default(true)
+  createdAt  DateTime       @default(now()) @map("created_at")
+  updatedAt  DateTime       @updatedAt @map("updated_at")
+  images     SectionImage[]
+
+  @@map("sections")
+}
+
+model SectionImage {
+  id        String   @id @default(cuid())
+  sectionId String   @map("section_id")
+  section   Section  @relation(fields: [sectionId], references: [id], onDelete: Cascade)
+  url       String
+  alt       String?
+  role      String   @default("background")
+  sortOrder Int      @default(0) @map("sort_order")
+  width     Int?
+  height    Int?
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("section_images")
+}
+
+model GalleryItem {
+  id          String             @id @default(cuid())
+  name        String
+  slug        String             @unique
+  description String?
+  woodType    String?            @map("wood_type")
+  dimensions  String?
+  featured    Boolean            @default(false)
+  sortOrder   Int                @default(0) @map("sort_order")
+  visible     Boolean            @default(true)
+  createdAt   DateTime           @default(now()) @map("created_at")
+  updatedAt   DateTime           @updatedAt @map("updated_at")
+  images      GalleryItemImage[]
+
+  @@map("gallery_items")
+}
+
+model GalleryItemImage {
+  id            String      @id @default(cuid())
+  galleryItemId String      @map("gallery_item_id")
+  galleryItem   GalleryItem @relation(fields: [galleryItemId], references: [id], onDelete: Cascade)
+  url           String
+  alt           String?
+  type          String      @default("full")
+  sortOrder     Int         @default(0) @map("sort_order")
+  width         Int?
+  height        Int?
+  createdAt     DateTime    @default(now()) @map("created_at")
+
+  @@map("gallery_item_images")
+}
+
+model MenuItem {
+  id        String   @id @default(cuid())
+  label     String
+  href      String
+  sortOrder Int      @default(0) @map("sort_order")
+  visible   Boolean  @default(true)
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("menu_items")
+}
+
+model ContactSubmission {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  phone     String?
+  message   String
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("contact_submissions")
+}
+
+model SiteSetting {
+  id    String @id @default(cuid())
+  key   String @unique
+  value String
+  label String?
+
+  @@map("site_settings")
+}

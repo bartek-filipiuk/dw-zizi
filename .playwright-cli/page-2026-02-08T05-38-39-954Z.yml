@@ -1,0 +1,161 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e5]:
+    - generic [ref=e6]:
+      - link "DW ZIZI" [ref=e7] [cursor=pointer]:
+        - /url: "#hero"
+      - generic [ref=e8]:
+        - link "Collection" [ref=e9] [cursor=pointer]:
+          - /url: "#gallery"
+          - text: Collection
+        - link "Philosophy" [ref=e10] [cursor=pointer]:
+          - /url: "#philosophy"
+          - text: Philosophy
+        - link "Craftsmanship" [ref=e11] [cursor=pointer]:
+          - /url: "#craftsmanship"
+          - text: Craftsmanship
+        - link "Contact" [ref=e12] [cursor=pointer]:
+          - /url: "#contact"
+          - text: Contact
+  - main [ref=e13]:
+    - generic [ref=e14]:
+      - generic [ref=e17]:
+        - heading "Where Nature Becomes Art" [level=1] [ref=e18]
+        - paragraph [ref=e19]: Handcrafted live edge oak tables that celebrate the raw beauty of ancient wood, transformed into functional sculptures for discerning spaces.
+        - link "Explore the Collection" [ref=e21] [cursor=pointer]:
+          - /url: "#gallery"
+      - generic [ref=e24]: Scroll
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - generic [ref=e30]: Our Philosophy
+        - heading "The Beauty of Imperfection" [level=2] [ref=e31]
+        - paragraph [ref=e32]: Every crack, every knot, every twist of grain tells a story centuries in the making.
+        - generic [ref=e33]:
+          - paragraph [ref=e34]: We don't fight the wood — we listen to it. Each live edge table begins as a conversation between artisan and ancient oak, where natural imperfections become the defining features of extraordinary furniture.
+          - paragraph [ref=e35]: The cracks that time has carved, the knots that mark decades of growth, the organic curves where bark once lived — these are not flaws to be hidden. They are the signatures of nature's artistry, preserved and elevated into pieces that bridge the gap between raw nature and refined living.
+          - paragraph [ref=e36]: "Our philosophy is simple: the most beautiful furniture doesn't try to improve upon nature. It simply reveals what was always there, waiting to be discovered."
+      - img "Live edge oak detail on dark background" [ref=e39]
+    - generic [ref=e41]:
+      - generic [ref=e42]:
+        - generic [ref=e43]: The Collection
+        - heading "The Collection" [level=2] [ref=e44]
+        - paragraph [ref=e45]: Each piece is a one-of-a-kind creation, shaped by centuries of natural growth and months of meticulous craftsmanship.
+      - generic [ref=e47]:
+        - generic [ref=e49]:
+          - generic [ref=e50] [cursor=pointer]:
+            - img "The Whispering Oak - full view" [ref=e51]
+            - generic [ref=e53]: 5 photos
+          - generic [ref=e54]:
+            - heading "The Whispering Oak" [level=3] [ref=e55]
+            - generic [ref=e56]:
+              - generic [ref=e57]: Ancient White Oak
+              - generic [ref=e58]: "|"
+              - generic [ref=e59]: 280 cm × 95-120 cm × 76 cm
+            - paragraph [ref=e60]: Born from an oak that stood for three centuries in a forgotten forest clearing, this table captures the whispered secrets of generations. Its dramatic live edge, preserved in its most raw form, flows like a river of amber along the full length. Deep teal resin fills the natural voids where time had its way, creating pools that catch the light like mountain lakes at dawn.
+        - generic [ref=e61]:
+          - generic [ref=e62] [cursor=pointer]:
+            - img "The River Oak - full view" [ref=e63]
+            - generic [ref=e65]: 4 photos
+          - generic [ref=e66]:
+            - heading "The River Oak" [level=3] [ref=e67]
+            - generic [ref=e68]:
+              - generic [ref=e69]: European Oak
+              - generic [ref=e70]: "|"
+              - generic [ref=e71]: 320 cm × 100-130 cm × 76 cm
+            - paragraph [ref=e72]: Inspired by the rivers that once nourished its roots, this monumental table features a natural split that runs its entire length, filled with translucent emerald resin that seems to glow from within. The live edges ripple and undulate, mirroring the water's eternal dance.
+        - generic [ref=e73]:
+          - generic [ref=e74] [cursor=pointer]:
+            - img "The Ancient Heart - full view" [ref=e75]
+            - generic [ref=e77]: 3 photos
+          - generic [ref=e78]:
+            - heading "The Ancient Heart" [level=3] [ref=e79]
+            - generic [ref=e80]:
+              - generic [ref=e81]: Heritage Oak
+              - generic [ref=e82]: "|"
+              - generic [ref=e83]: 240 cm × 85-110 cm × 76 cm
+            - paragraph [ref=e84]: Cut from the very heart of a 400-year-old oak, this table reveals the tree's innermost secrets. Concentric growth rings radiate outward like a topographic map of time itself, each line marking a year of growth, drought, or plenty. The natural cavities at center have been filled with deep amber resin.
+        - generic [ref=e85]:
+          - generic [ref=e86] [cursor=pointer]:
+            - img "The Forest Burl - full view" [ref=e87]
+            - generic [ref=e89]: 3 photos
+          - generic [ref=e90]:
+            - heading "The Forest Burl" [level=3] [ref=e91]
+            - generic [ref=e92]:
+              - generic [ref=e93]: Burled Oak
+              - generic [ref=e94]: "|"
+              - generic [ref=e95]: 200 cm × 90-105 cm × 76 cm
+            - paragraph [ref=e96]: A rare burl formation gives this table its otherworldly character — swirling grain patterns that seem to move and shift as you walk around it. This anomaly of nature, where the tree healed itself around an ancient wound, creates a surface of mesmerizing complexity.
+    - generic [ref=e99]:
+      - generic [ref=e100]:
+        - generic [ref=e101]: Craftsmanship
+        - heading "The Art of Making" [level=2] [ref=e102]
+        - paragraph [ref=e103]: From forest to finished masterpiece — a journey of patience, precision, and profound respect for the material.
+      - generic [ref=e106]:
+        - generic [ref=e108]:
+          - img "Artisan working with oak slab" [ref=e111]
+          - generic [ref=e114]:
+            - heading "Sourcing the Oak" [level=3] [ref=e115]
+            - paragraph [ref=e116]: We journey to ancient forests, seeking oak with extraordinary character. Each tree is selected for its dramatic grain patterns, natural splits, and the kind of beauty that centuries of growth create. Only the most exceptional specimens become our raw material.
+        - generic [ref=e118]:
+          - img "Detail of wood shaping process" [ref=e121]
+          - generic [ref=e124]:
+            - heading "Shaping the Form" [level=3] [ref=e125]
+            - paragraph [ref=e126]: With respect for the wood's natural curves, our artisans carefully shape each slab. The live edge is preserved in its raw glory — every undulation, every bark impression tells a story. The natural voids are filled with hand-poured resin in jewel tones that catch the light.
+        - generic [ref=e128]:
+          - img "Finishing touches on live edge" [ref=e131]
+          - generic [ref=e134]:
+            - heading "The Final Touch" [level=3] [ref=e135]
+            - paragraph [ref=e136]: Multiple layers of hand-rubbed oil bring the grain to life, creating a surface that's warm to the touch and deep with character. Each table is finished with our signature satin sheen — protective enough for daily use, beautiful enough for a gallery.
+    - generic [ref=e143]:
+      - generic [ref=e144]:
+        - generic [ref=e145]: Commission a Piece
+        - heading "Begin Your Story" [level=2] [ref=e146]
+        - paragraph [ref=e147]: Each table is a commission, crafted to your vision. Share your dream, and we'll bring nature's art to your space.
+      - generic [ref=e151]:
+        - generic [ref=e152]:
+          - generic [ref=e153]:
+            - generic [ref=e154]: Name
+            - textbox "Name" [ref=e155]:
+              - /placeholder: Your full name
+          - generic [ref=e156]:
+            - generic [ref=e157]: Email
+            - textbox "Email" [ref=e158]:
+              - /placeholder: your@email.com
+          - generic [ref=e159]:
+            - generic [ref=e160]: Phone (optional)
+            - textbox "Phone (optional)" [ref=e161]:
+              - /placeholder: +48 123 456 789
+          - generic [ref=e162]:
+            - generic [ref=e163]: Message
+            - textbox "Message" [ref=e164]:
+              - /placeholder: Tell us about your dream table...
+        - button "Send Message" [ref=e166]
+  - contentinfo [ref=e167]:
+    - generic [ref=e170]:
+      - generic [ref=e171]:
+        - generic [ref=e172]:
+          - heading "DW ZIZI" [level=3] [ref=e173]
+          - paragraph [ref=e174]: Luxury Live Edge Oak Furniture
+          - paragraph [ref=e176]: Handcrafted with passion in the heart of Europe. Each piece tells a story of nature, patience, and artistry.
+        - generic [ref=e177]:
+          - heading "Contact" [level=4] [ref=e178]
+          - generic [ref=e179]:
+            - link "studio@dwzizi.com" [ref=e180] [cursor=pointer]:
+              - /url: mailto:studio@dwzizi.com
+            - link "+48 123 456 789" [ref=e181] [cursor=pointer]:
+              - /url: tel:+48123456789
+            - paragraph [ref=e182]: Warsaw, Poland
+        - generic [ref=e183]:
+          - heading "Follow Us" [level=4] [ref=e184]
+          - generic [ref=e185]:
+            - link "Instagram" [ref=e186] [cursor=pointer]:
+              - /url: https://instagram.com/dwzizi
+              - img [ref=e187]
+            - link "Facebook" [ref=e189] [cursor=pointer]:
+              - /url: https://facebook.com/dwzizi
+              - img [ref=e190]
+      - generic [ref=e194]:
+        - paragraph [ref=e195]: © 2026 DW ZIZI. All rights reserved.
+        - paragraph [ref=e196]: Each piece is a unique, handcrafted creation.
+  - button "Open Next.js Dev Tools" [ref=e202] [cursor=pointer]:
+    - img [ref=e203]
+  - alert [ref=e206]

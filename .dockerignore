@@ -1,0 +1,11 @@
+node_modules
+.next
+.git
+.gitignore
+.env
+.env.*
+uploads/*
+!uploads/.gitkeep
+.claude
+.playwright-cli
+*.md

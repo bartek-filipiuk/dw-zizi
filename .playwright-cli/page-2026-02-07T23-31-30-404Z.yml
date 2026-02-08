@@ -1,0 +1,79 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "Videtion" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e6]: Videtion
+        - navigation [ref=e7]:
+          - link "Sign In" [ref=e8] [cursor=pointer]:
+            - /url: /login
+          - link "Get Started" [ref=e9] [cursor=pointer]:
+            - /url: /login
+    - main [ref=e10]:
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - img [ref=e16]
+          - generic [ref=e18]: Powered by Advanced AI
+        - heading "Transform YouTube Videos into Professional Articles" [level=1] [ref=e19]
+        - paragraph [ref=e20]: Convert any YouTube video into a polished, SEO-optimized article in seconds. Perfect for content creators, marketers, and researchers.
+        - generic [ref=e21]:
+          - link "Start for Free" [ref=e22] [cursor=pointer]:
+            - /url: /login
+            - text: Start for Free
+            - img
+          - link "Learn More" [ref=e23] [cursor=pointer]:
+            - /url: "#features"
+        - paragraph [ref=e24]: 10 free credits to get started. No credit card required.
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - heading "Everything You Need" [level=2] [ref=e28]
+          - paragraph [ref=e29]: Powerful features to transform your video content into written masterpieces.
+        - generic [ref=e30]:
+          - generic [ref=e32]:
+            - img [ref=e34]
+            - heading "Lightning Fast" [level=3] [ref=e36]
+            - paragraph [ref=e37]: Generate articles in under 2 minutes. Real-time progress tracking keeps you informed every step of the way.
+          - generic [ref=e39]:
+            - img [ref=e41]
+            - heading "Multiple Formats" [level=3] [ref=e44]
+            - paragraph [ref=e45]: Choose from summaries, blog posts, tutorials, or detailed articles. Export as Markdown, HTML, or JSON.
+          - generic [ref=e47]:
+            - img [ref=e49]
+            - heading "Save Hours" [level=3] [ref=e52]
+            - paragraph [ref=e53]: What takes hours of manual transcription and editing is done automatically. Focus on what matters most.
+          - generic [ref=e55]:
+            - img [ref=e57]
+            - heading "Secure & Private" [level=3] [ref=e59]
+            - paragraph [ref=e60]: Your content is processed securely. We never store your videos or share your data with third parties.
+          - generic [ref=e62]:
+            - img [ref=e64]
+            - heading "Customizable Output" [level=3] [ref=e66]
+            - paragraph [ref=e67]: Adjust language, style, audience, and length to match your needs. Support for English and Polish with multiple writing styles including casual, formal, and technical.
+      - generic [ref=e70]:
+        - heading "Ready to Transform Your Content?" [level=2] [ref=e71]
+        - paragraph [ref=e72]: Join thousands of content creators who are already saving time with Videtion.
+        - link "Get Started Now" [ref=e73] [cursor=pointer]:
+          - /url: /login
+          - text: Get Started Now
+          - img
+    - contentinfo [ref=e74]:
+      - generic [ref=e75]:
+        - paragraph [ref=e76]: © 2026 Videtion. All rights reserved.
+        - navigation [ref=e77]:
+          - link "Terms" [ref=e78] [cursor=pointer]:
+            - /url: /terms
+          - link "Privacy" [ref=e79] [cursor=pointer]:
+            - /url: /privacy
+  - region "Notifications alt+T"
+  - alert [ref=e80]
+  - dialog [active] [ref=e81]:
+    - generic [ref=e82]:
+      - paragraph [ref=e83]:
+        - generic [ref=e84]: We use cookies to provide you with a better experience. Click "Accept All" to consent to all cookies, or manage your preferences.
+      - generic [ref=e85]:
+        - link "Manage preferences" [ref=e86] [cursor=pointer]:
+          - /url: "#"
+        - generic [ref=e87]:
+          - button "Decline All" [ref=e88] [cursor=pointer]
+          - button "OK" [ref=e89] [cursor=pointer]

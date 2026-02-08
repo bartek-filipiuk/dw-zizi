@@ -48,18 +48,25 @@ USER root
 COPY --from=builder /app/.next/standalone ./
 COPY --from=builder /app/.next/static ./.next/static
 
-# Copy Prisma files for migrations
-COPY --from=builder /app/node_modules/.prisma ./.prisma
-COPY --from=builder /app/node_modules/@prisma ./node_modules/@prisma
-COPY --from=builder /app/node_modules/prisma ./node_modules/prisma
+# Copy full node_modules from deps (needed for prisma migrate + seed)
+COPY --from=deps /app/node_modules ./node_modules
+
+# Copy Prisma files, seed script, and package.json
 COPY --from=builder /app/prisma ./prisma
 COPY --from=builder /app/prisma.config.ts ./
+COPY --from=builder /app/package.json ./
 
 # Copy seed images
 COPY --from=builder /app/images ./images
 
 # Create uploads directory
 RUN mkdir -p /app/uploads && chmod 777 /app/uploads
+
+# Run migrations and seed during build
+RUN su postgres -c "pg_ctl -D /var/lib/postgresql/data start -w" && \
+    npx prisma migrate deploy && \
+    npx prisma db seed && \
+    su postgres -c "pg_ctl -D /var/lib/postgresql/data stop -w"
 
 # Supervisord config
 COPY <<'EOF' /etc/supervisord.conf
@@ -91,29 +98,6 @@ stderr_logfile_maxbytes=0
 environment=PORT="3000",HOSTNAME="0.0.0.0",DATABASE_URL="postgresql://dw_zizi:dw_zizi_secret@localhost:5432/dw_zizi",NODE_ENV="production"
 EOF
 
-# Startup script: run migrations then start supervisor
-COPY <<'STARTUP' /app/start.sh
-#!/bin/sh
-set -e
-
-# Start PostgreSQL temporarily for migrations
-su postgres -c "pg_ctl -D /var/lib/postgresql/data start -w"
-
-# Run Prisma migrations
-npx prisma migrate deploy 2>/dev/null || echo "No migrations to run"
-
-# Seed if database is empty
-npx prisma db seed 2>/dev/null || echo "Seed skipped or already applied"
-
-# Stop temporary PostgreSQL (supervisor will start it)
-su postgres -c "pg_ctl -D /var/lib/postgresql/data stop -w"
-
-# Start supervisor (manages both PostgreSQL and Next.js)
-exec supervisord -c /etc/supervisord.conf
-STARTUP
-
-RUN chmod +x /app/start.sh
-
 EXPOSE 3000
 
-CMD ["/app/start.sh"]
+CMD ["supervisord", "-c", "/etc/supervisord.conf"]

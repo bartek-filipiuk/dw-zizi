@@ -45,7 +45,6 @@ RUN initdb -D /var/lib/postgresql/data && \
 USER root
 
 # Copy Next.js standalone build
-COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next/standalone ./
 COPY --from=builder /app/.next/static ./.next/static
 
